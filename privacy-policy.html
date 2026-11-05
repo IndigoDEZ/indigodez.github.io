@@ -66,7 +66,7 @@
 <header>
   <p class="app">Scan2Skin 3D: Avatar Creator</p>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective date: October 18, 2026 &middot; Provided by Z Farm Technologies</p>
+  <p class="meta">Effective date: November 5, 2026 &middot; Provided by Z Farm Technologies</p>
 </header>
 
 <section class="summary" aria-labelledby="summary">
@@ -110,7 +110,7 @@
 <h2 id="analyze">2. What the app analyzes, on your phone only</h2>
 <ul>
   <li>Camera images of the person being scanned.</li>
-  <li>Depth data from your phone's depth sensor, if it has one.</li>
+  <li>On Android only: depth data during the walk-around capture (section 6). The iPhone and iPad app uses no depth data.</li>
   <li>Proportions the app works out from these: the shape and position of the face and its features (eyes, brows, mouth, glasses, hair), body proportions, and the colors of skin, hair, eyes and clothes.</li>
 </ul>
 <p>The app uses these only to draw the skin. It does not use them to recognize, identify or match anyone, and it does not guess age, sex, gender, ethnicity, health or emotion. They are never used to train or improve any model, and they are never sent to us, to advertisers, or to anyone else.</p>
@@ -126,7 +126,7 @@
   <li><strong>A draft of unsaved edits</strong>, one at a time, so pixel edits survive if the app closes. It is removed when you save or discard the edits.</li>
   <li><strong>A record that the scanning notice was accepted</strong>: the date, the version of the notice and the kind of confirmation. It contains no name and no image.</li>
   <li><strong>A record that the welcome summary was accepted</strong>: the date and its version.</li>
-  <li><strong>No list of your phone's sensors.</strong> The app checks which sensors your phone has (for example a depth sensor) each time it opens, to choose the capture method. The result is not stored.</li>
+  <li><strong>No list of your phone's sensors.</strong> The app checks which sensors your phone has (on Android, for example, a depth sensor; on iPhone and iPad, only which cameras it has) each time it opens, to choose the capture method. The result is not stored.</li>
 </ul>
 <p>Skins you export or share (as PNG files or skin packs) are copies under your control. Where they go is up to you.</p>
 
@@ -182,7 +182,16 @@
 <p>Depending on where you live, you may have the right to access, correct, delete or export your personal data, to object to or restrict its processing, and to withdraw consent. You can contact us at <a href="mailto:z.farm.technologies@gmail.com">z.farm.technologies@gmail.com</a>; we reply within 30 days (45 days for requests under California law). Requests about ad data are answered with directions to Google. If you are in the EU or UK, you may also complain to your data-protection authority.</p>
 
 <h2 id="face">13. Face data</h2>
-<p>This includes residents of Illinois, Texas, Washington and other places with biometric privacy laws. The app measures face geometry only in your phone's memory while making a skin, then discards it. We do not collect, store, sell, disclose or profit from face geometry, and it is never used to identify anyone.</p>
+<p>This section explains in one place what the app does with faces. It applies everywhere, including to residents of Illinois, Texas, Washington and other places with biometric privacy laws.</p>
+<ul>
+  <li><strong>What the app uses.</strong> Ordinary camera photos of the person being scanned. Models that run on the device find points on the face in those photos (face landmarks, such as the corners of the eyes and mouth). From them the app measures where the eyes, brows, mouth, glasses and hair are and how they are shaped, and the colors of skin, hair and eyes.</li>
+  <li><strong>No TrueDepth, no face tracking.</strong> On iPhone and iPad the app does not use the TrueDepth camera's depth data, ARKit face tracking or Face ID. It takes ordinary color photos with the camera, and it uses no depth data at all.</li>
+  <li><strong>Why.</strong> Only to draw the face of the skin: where the eyes, brows and mouth go and which colors they get. Face data is never used to recognize, identify, authenticate or match anyone, to guess age, sex, gender, ethnicity, health or emotion, for advertising, or to train or improve any model.</li>
+  <li><strong>Where it is kept, and for how long.</strong> Face landmarks and measurements exist only in the device's memory while a skin is being made, and are discarded as soon as the skin is made. They are never written to storage, so they are not in My skins, in backups or in exported skins. The photos they come from are deleted as described in section 3. A finished skin is a small pixel picture drawn from these choices; it contains no photo and no face measurements.</li>
+  <li><strong>Sharing.</strong> Face data never leaves the device. It is not sent to us (we run no server for the app), to Google AdMob or any other advertiser, or to any other third party, and it is never sold.</li>
+  <li><strong>Deletion.</strong> There is nothing to ask us to delete: face data is discarded on the device as soon as the skin is made, and we never receive it. Photos are deleted when the capture ends, and "Delete all data" in Settings removes any photo still held and everything else the app keeps.</li>
+</ul>
+<p>We do not collect, store, sell, disclose or profit from face geometry.</p>
 
 <h2 id="others">14. Scanning other people</h2>
 <p>Only scan yourself or someone who agrees to be scanned. For a child, a parent or guardian should do the scan or agree to it first. The app asks you to confirm this before your first scan. It scans one person at a time, ignores any others in the background, and asks you to reframe if someone stands in the frame with the person being scanned. The background is removed on your phone before anything else is analyzed.</p>
